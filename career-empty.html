@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='header.css'>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.typekit.net/gnq5nfo.css">
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<title>Codebold | Careers</title>
+
+
+</head>
+<body style="background-color: #1A1E7E;"> 
+    
+
+        <!-- NAV BAR -->
+        <section class="header_section">
+            <div class="ow-header">
+                <nav class="ow-nav">    
+                    <div class="logo" href="#home">
+                        <img src="white-logo.png">
+                    </div>
+                    <ul class ="header_button">
+                        <li><a href="#home">Home</a></li>
+                        <li class="highlight" style="border-bottom: 3px solid;"><a href="career.html">Careers</a></li>
+                        <li><a href=index.html>Our Work</a></li>
+                        <li><a href=about-us.html>About Us</a></li>
+                    </ul>
+                    <div class="sign_div_button">
+                        <a href="#SIGN UP" class="sign_up_btn">GET IN TOUCH  &nbsp;></a>
+                    </div>
+                    <div class="dropdown_btn">
+                        <i class="fa-solid fa-bars fa-2xl" style="color: #FFFFFF;"></i>
+                    </div>
+                </nav>
+            </div>
+    
+            <div class ="dropdown_menu">
+                <div class="logo1">
+                    <img class="img-pop" src="images/codebold-white-logo.png">
+                    <div class="exit">
+                        <i class="fa-solid fa-xmark fa-2xl" style="color: #F8F8F7;"></i>
+                    </div>
+                </div>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#work">Our Work</a></li>
+                <li><a href="#career">Careers</a></li>
+            </div>
+        </section>
+
+    <div class="career-top">
+        <div class="split-box">
+            <p class="space10" style="font-size: 1.2rem; opacity: 50%; line-height: 26px;">CAREERS</p>
+            <p style="font-weight: 600; font-size: 3rem; line-height: 56px;margin-top: 0;">Open Positions</p>
+        </div>
+        <div class="split-box">
+            <p style="max-width: 35ch;opacity: 80%;line-height:26px ;">
+                We do more than provide jobs, we nurture careers. Each member of Circinius receives training, mentoring, and industry exposure — all the right things needed to build a thriving career. 
+            </p>
+            
+        </div>
+
+    </div>
+
+    <section class="jobs">
+
+
+   
+
+    <div class="no-jobs">
+    <img src="images/Alert.png" alt="Alert" style="margin-bottom: 20px;">
+    <h5 style=" margin-bottom: 0;">Sorry, there are no positions available at this time</h5>
+    <p style="
+    color:#4C4E58;
+    max-width: 45ch;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    ">We will post as soon as we have an open position. Please come back again at another time.</p>
+    <button class="grad-btn" href="index.html">Go Back Home</button>
+    
+
+    </div>
+
+
+  
+        
+        
+    </section>
+        
+    
+   
+
+
+
+ 
+    <footer class="footer">
+        <div class="footer-div">
+            <div>
+                <img class="footer-img-max"src="images/footer-logo.png">
+            </div>
+    
+            <div class="footer-ul">
+                <div>
+                    <p>SITE MAP</p>
+                    <ul class="site-map">
+                        <a href=about.html>About Us</a>
+                        <a href="#">Our Work</a>
+                        <a href="#">Career</a>
+                        <a href="#">Contact Us</a>
+                    </ul>
+                </div>
+                <div>
+                    <p>SERVICES</p>
+                    <ul class="services">
+                        <a href="#">Comic art & Illustration</a>
+                        <a href="#">Board Game art</a>
+                        <a href="#">Book cover & Illustration</a>
+                        <a href="#">Concept art</a>
+                    </ul>
+                </div>
+                <div class="footer-career">
+                    <p>Careers</p>
+                    <p>Do your best work among a caring 
+                       community of diverse talents.</p>
+                    <a href="#" class="footer-join highlight" style="border-bottom:3px solid">JOIN US</a>
+                    <i class="fa-solid fa-chevron-right" style="color:var(--secondaryLBlue)"></i>
+                </div>
+            </div>
+        </div>
+    
+        <p class="copyright">Copyright © 2022 CodeBold. All Rights Reserved.</p>
+    </footer>
+    
+    
+
+
+
+
+
+
+    <script>
+        const toggle_btn = document.querySelector('.toggle_btn')
+        const toggle_btnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggle_btn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggle_btnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+  
+
+</body>
+</html>
